@@ -18,3 +18,14 @@
     width: 74.5px;
     border: 1px black solid;
 }
+
+.sketch-divs:hover {
+    background-color: black;
+    height: 74.5px;
+    width: 74.5px;
+    border: 1px white solid;
+}
+
+.add-bg {
+    background-color: black;
+}

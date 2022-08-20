@@ -12,3 +12,24 @@ const container = document.querySelector('#container');
 } 
 
 console.log("File is here");
+
+const divs = document.getElementsByClassName('sketch-divs');
+
+
+for (const div of divs) {
+    div.addEventListener('mouseover', function() {
+        console.log('Clicked a div');
+        div.classList.add('add-bg');
+    });
+    
+}
+
+const resetBtn = document.querySelector('#reset');
+
+resetBtn.addEventListener('click', function(){
+
+    const divs = document.querySelectorAll('.sketch-divs');
+    for (const div of divs) {
+        div.classList.remove('add-bg');
+    }
+});
