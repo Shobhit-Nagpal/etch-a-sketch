@@ -85,8 +85,16 @@ changeSizeBtn.addEventListener('click', function() {
     
     createDivs(squareSize);
 
+    const divs = document.querySelectorAll('.sketch-divs');
     console.log(divs);
 
-});
+    divs.forEach((div) => {
+        div.addEventListener('mouseover', function() {
+            console.log('Clicked a div');
+            div.style.background = 'black';
+        });
+    });
 
-sketchCanvas();
+    return;
+
+});
