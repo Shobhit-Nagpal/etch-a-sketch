@@ -5,8 +5,10 @@ let squareSize = 16;
 
 
 
-//    DEFAULT GRID CREATION
 createDivs(16);
+
+
+//    FUNCTION TO CREATE DIVS
 
 function createDivs(squareSize) {
     for (let i = 0 ; i < squareSize ; i++) {
@@ -32,7 +34,7 @@ function removeDivs() {
 const divs = document.querySelectorAll('.sketch-divs');
 console.log(divs);
 
-//    EVENT TO DETECT HOVER AND CHANGE COLOR OF DIVS
+//    FUNCTION TO SKETCH ON THE CANVAS
 
 function sketchCanvas() {
     divs.forEach((div) => {
@@ -84,6 +86,8 @@ changeSizeBtn.addEventListener('click', function() {
     //    ADDING NEW DIVS ACC TO SIZE CHOSEN BY USER
     
     createDivs(squareSize);
+
+    //   DETECTS THE DIVS AGAIN TO SKETCH AFTER SIZE CHANGES
 
     const divs = document.querySelectorAll('.sketch-divs');
     console.log(divs);
